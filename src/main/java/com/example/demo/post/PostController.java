@@ -19,7 +19,7 @@ public class PostController {
     @GetMapping
     public List<Post> list() {
         return postRepository.findAll();
-    } 
+    }  
 
     @PostMapping
     public ResponseEntity<Post> create(@RequestBody Post req) {
